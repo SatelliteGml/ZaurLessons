@@ -5,7 +5,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class Employee extends Participant{
+public class Employee extends Participant {
     public Employee(String name, int age) {
         super(name, age);
     }
