@@ -3,14 +3,16 @@ package Heroes;
 import lombok.Data;
 
 @Data
-public class Hero {
+public abstract class Hero {
     private String name;
+    private int damage;
+    private int health;
 
-    public Hero(String name) {
+    public Hero(String name, int damage, int health) {
         this.name = name;
+        this.damage = damage;
+        this.health = health;
     }
 
-    public void attackEnemy() {
-        System.out.println(name + " attack ");
-    }
+    public abstract void attackEnemy(Enemy enemy);
 }
