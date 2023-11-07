@@ -18,7 +18,7 @@ public class Team <T extends Participant> {
         System.out.println("In team: --> " + name + " <-- was add new participant: "
                 + participant.getName());
     }
-    public void playWith(Team team){
+    public void playWith(Team<T> team){
         String winnerName = "";
         Random rnd = new Random();
         int i = rnd.nextInt(2);
